@@ -24,4 +24,9 @@ public class UserDaoImpl implements IUserDao {
     public Object getAllUsers() {
         return repository.findAll();
     }
+
+    @Override
+    public User findByActivationCode(String code) {
+        return repository.findByActivationCode(code);
+    }
 }

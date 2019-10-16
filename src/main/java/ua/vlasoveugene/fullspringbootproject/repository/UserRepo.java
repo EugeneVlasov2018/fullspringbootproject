@@ -7,4 +7,6 @@ import ua.vlasoveugene.fullspringbootproject.entity.User;
 @Component
 public interface UserRepo extends JpaRepository<User, Integer> {
     User findByUsername(String login);
+
+    User findByActivationCode(String code);
 }
