@@ -8,4 +8,6 @@ public interface IUserDao {
     void saveNewUser(User innerUser);
 
     Object getAllUsers();
+
+    User findByActivationCode(String code);
 }
